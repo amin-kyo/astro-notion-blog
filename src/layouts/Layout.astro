@@ -86,13 +86,13 @@ if (database.Icon && database.Icon.Type === 'file') {
             </div>
           )
         }
-        　<ul class="nav">
-          　　<li class="nav-menu"><a href="/">TOP</a></li>
-          　　<li class="nav-menu"><a href="/posts">POSTS</a></li>
+          <ul class="nav">
+            <li class="nav-menu"><a href="/">TOP</a></li>
+            <li class="nav-menu"><a href="/posts">POSTS</a></li>
           </ul>
       </header>
 
-      <div>
+      <div class="contents-wrapper">
         <main>
           <div class="content">
             <header>
@@ -172,13 +172,16 @@ if (database.Icon && database.Icon.Type === 'file') {
       display: block;
     }
   }
-
+  .contents-wrapper{
+    justify-content: center;
+}
   main {
     flex: 1;
     order: 2;
     margin-right: 20px;
     justify-content: space-between;
     background-color: #fff;
+    max-width: 800px;
   }
   @media (max-width: 640px) {
     main {
@@ -189,7 +192,7 @@ if (database.Icon && database.Icon.Type === 'file') {
 
   aside {
     order: 1;
-    width: 280px;
+    width: 200px;
     padding: 20px 20px;
     margin: 0 20px ;
     background-color: #ffffff;
@@ -222,7 +225,7 @@ if (database.Icon && database.Icon.Type === 'file') {
   }
 
   main header {
-    padding: 20px 0 20px;
+    padding: 0;
   }
   main header h1 {
     font-weight: 700;
